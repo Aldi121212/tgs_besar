@@ -19,3 +19,6 @@ Route::group(['middleware' => ['auth']], function () {
     ->name('dashboard');
     Route::resource('barang', ItemController::class);
     Route::resource('pegawai', UserController::class);
+    Route::resource('jabatan', RoleController::class);
+    Route::resource('kategori', CategoriesController::class);
+    Route::resource('merek', MerkController::class);
