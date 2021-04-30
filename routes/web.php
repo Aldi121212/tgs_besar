@@ -27,4 +27,8 @@ Route::group(['middleware' => ['auth']], function () {
         [ItemController::class, 'report']
     )->name('laporan.barang');
     Route::resource('profil', ProfileController::class);
+    Route::get(
+        'laporan/transaksi',
+        [TransactionController::class, 'report']
+    )->name('laporan.transaksi');
 });
