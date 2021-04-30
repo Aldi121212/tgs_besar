@@ -22,3 +22,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('jabatan', RoleController::class);
     Route::resource('kategori', CategoriesController::class);
     Route::resource('merek', MerkController::class);
+    Route::get(
+        'laporan/barang',
+        [ItemController::class, 'report']
+    )->name('laporan.barang');
+    Route::resource('profil', ProfileController::class);
+});
