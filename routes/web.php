@@ -17,3 +17,5 @@ Route::group(['middleware' => ['auth']], function () {
         [DashboardController::class, 'index']
     )
     ->name('dashboard');
+    Route::resource('barang', ItemController::class);
+    Route::resource('pegawai', UserController::class);
