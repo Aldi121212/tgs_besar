@@ -1,6 +1,3 @@
-<h1 align="center">Tugas Besar PWL</h1>
-<p>
-</p>
 
 ## Install
 
@@ -8,15 +5,7 @@
 npm install
 composer install
 ```
-```sh
-## fix if php error
-composer self-update
-composer clear-cache
-rm -rf vendor
-rm composer.lock
-composer install --ignore-platform-reqs
-npm install
-```
+
 ## Usage
 
 ```sh
@@ -31,7 +20,11 @@ php artisan storage:link
 ```sh
 php artisan serve
 ```
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
+## Use
+```admin : admin@bebas.com 
+password : 123456
+user : user@bebas.com 
+password : 123456
+pegawai : pegawai@bebas.com 
+password : 123456
+```
